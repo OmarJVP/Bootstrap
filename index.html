@@ -1,624 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>This is test</title>
-	<link rel="stylesheet" href="css/font-awesone.min.css">
+	<title>BOOTSRAP 2 TEST</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
-	<meta name="viewport" content="width=devide-width, initial-scale=1.0">
-	<style type="text/css">
-	/*escritorio*/
-		@media(min-width: 1200px){
-  body{
-    /*color:red;*/
-  }
-}
-
-  /*Escritorio pequeño o tablet*/
-@media(min-width: 768px) and (max-width: 979px){
-  body{
-    color:green;
-  }
-}
-
-    /*tablet o smartphone */
-@media(max-width: 767px){
-  body{
-    color:blue;
-  }
-}
-    /* Smartphone */
-@media(max-width: 480px){
-  body{
-    color:yellow;
-  }
-}
-	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
-
 <body>
+	<!-- EJEMPLO OCULTAR DIFERENTES DISPOSITIVOS -->
 	<div class="container">
 		<div class="row-fluid">
-			<div class="col-md-12">
-				&nbsp;
+			<div class="well visible-lg">
+				<h1 class="text-center">
+					DESKTOP
+				</h1>
+			</div>
+			<div class="well visible-md">
+				<h1 class="text-center">
+					TABLET
+				</h1>
+			</div>
+			<div class="well visible-sm visible-xs">
+				<h1 class="text-center">
+					SMARTPHONE
+				</h1>
 			</div>
 		</div>
-	
-	<div class="row-fluid">
-		<div class="col-md-12">
-			<div class="page-header">
-				<h1>Notificaciones</h1>
-			</div>
-
-			<div class="row-fluid">
-				<div class="col-md-3">
-					<div class="alert alert-warning">
-						<button class="close" type="button" data-dismiss="alert">&times;</button>
-						<h4>Alert!!</h4>
-						This is a test
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="alert alert-success">
-					<button class="close" type="button" data-dismiss="alert">&times;</button>
-						<h4>Sucess!!</h4>This is a test
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="alert alert-info">
-					<button class="close" type="button" data-dismiss="alert">&times;</button>
-						<h4>Info</h4>This is a test
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="alert alert-error alert-warning">
-					<button class="close" type="button" data-dismiss="alert">&times;</button>
-						<h4>Error!!</h4>This is a test
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-
-	<div class="row-fluid">
-		<div class="col-md-12">
-			<div class="page-header">
-				<h1>Thumbnails</h1>
-			</div>
-
-			<ul class="thumbnails">
-				<li class="col-md-3"><a href="" class="thumbnail"><img src="img" alt=""></a></li>
-				<li class="col-md-3"><a href="" class="thumbnail"><img src="img" alt=""></a></li>
-				<li class="col-md-3"><a href="" class="thumbnail"><img src="img" alt=""></a></li>
-				<li class="col-md-3"><a href="" class="thumbnail"><img src="img" alt=""></a></li>
-			</ul>
-
-		</div>
-	</div>
-
-	<div class="row-fluid">
-		<div class="col-md-12">
-			<div class="page-header">
-				<h1>Labels and badges</h1>
-			</div>
-
-			<span class="label label-default">Ejemplo</span>
-			<span class="label label-important">Ejemplo</span>
-			<span class="label label-info">Ejemplo</span>
-			<span class="label label-warning">Ejemplo</span>
-
-			<hr>
-
-			<span class="badge">1</span>
-			<span class="badge badge-important">2</span>
-			<span class="badge badge-info">3</span>
-			<span class="badge badge-warning">4</span>
-			<span class="badge-success">5</span>
-			<span class="badge">6</span>
-
-		</div>
-	</div>
-
-	<div class="row-fluid">
-		<div class="col-md-12">
-			<div class="page-header">
-				<h1>Paginacion</h1>
-			</div>
-			
-			<div>
-				<ul class="pagination pagination-lg pager">
-					<li><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-					<li><a href="#">5</a></li>
-				</ul>
-			</div>
-			<hr>
-			<div>
-				<ul class="pagination">
-					<li><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-					<li><a href="#">5</a></li>
-				</ul>
-			</div>
-
-		</div>
-	</div>
-
-	<div class="row-fluid">
-		<div class="col-md-12">
-			<div class="page-header">
-				<h1>BreadCrums</h1>
-			</div>
-
-			<ul class="breadcrumb">
-				<li><a href="">Home</a> <span class="divider"></span></li>
-				<li><a href="">Users</a> <span class="divider"></span></li>
-				<li class="active">Admin</li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="row-fluid">
-		<div class="span12">
-			<div class="page-header">
-				<h1>Menu de Navegacion</h1>
-			</div>
-		<div class="navbar navbar-default navbar-inverse navbar-fixed-top">
-			<div class="container">
-				<a href="" class="navbar-brand">Hola</a>
-				<ul class="navbar-nav nav pull-right">
-					<li class="divider-vertical"><a href="">1</a></li>
-					<li><a href="">2</a></li>
-					<li><a href="">3</a></li>
-					<li><a href="">4</a></li>
-				</ul>
-			</div>
-		</div>
-		</div>
-	</div>
-
-	<div class="row-fluid">
-		<div class="span12">
-			<div class="page-header">
-				<h1>Listas</h1>
-			</div>
-		</div>
-	</div>
-
-	<div class="row-fluid">
-		<div class="col-md-4">
-			<ul class="nav nav-pills">
-				<li class ="active"><a href="#">test 1</a></li>
-				<li><a href="#">test 2</a></li>
-				<li><a href="#">test 3</a></li>
-				<li class="disabled"><a href="#">test 4</a></li>
-			</ul>
-
-			<hr>
-
-			<ul class="nav nav-tabs">
-				<li class ="active"><a href="#">test 1</a></li>
-				<li><a href="#">test 2</a></li>
-				<li><a href="#">test 3</a></li>
-				<li class="disabled"><a href="#">test 4</a></li>
-			</ul>
-			<hr>
-
-			<ul class="nav nav-tabs">
-				<li class ="active"><a href="#">test 1</a></li>
-				<li><a href="#">test 2</a></li>
-				<li><a href="#">test 3</a></li>
-				<li class="disabled"><a href="#">test 4</a></li>
-			</ul>
-
-
-		</div>
-		<hr>
-		<div class="col-md-4">
-			<ul class="nav nav-list well">
-				<li><a href="">CodigoFacilito</a></li>
-				<li><a href="">CodigoFacilito</a></li>
-				<li><a href="">CodigoFacilito</a></li>
-				<li><a href="">CodigoFacilito</a></li>
-				<li><a href="">CodigoFacilito</a></li>
-				<li><a href="">CodigoFacilito</a></li>
-			</ul>
-		</div>
-		<div class="col-md-4">
-			<ul class="nav nav-pills nav-stacked">
-				<li class ="active"><a href="#">test 1</a></li>
-				<li><a href="#">test 2</a></li>
-				<li><a href="#">test 3</a></li>
-				<li class="disabled"><a href="#">test 4</a></li>
-			</ul>
-
-			<hr>
-
-			<ul class="nav nav-tabs nav-stacked">
-				<li class ="active"><a href="#">test 1</a></li>
-				<li><a href="#">test 2</a></li>
-				<li><a href="#">test 3</a></li>
-				<li class="disabled"><a href="#">test 4</a></li>
-			</ul>
-		</div>
-		<hr>
-		<hr>
-	</div>
-
-	<div class="row-fluid">
-	<hr>
-		<div class="span12">
-			<div class="page-header">
-				<h1>Grupos de botones</h1>
-			</div>
-		</div>
-	</div>
-
-	<div class="btn-group">
-		<a href="" class="btn btn-default">Izq</a>
-		<a href="" class="btn btn-default">Centro</a>
-		<a href="" class="btn btn-default">Der</a>
-	</div>
-
-	<div class="btn-toolbar">
-		<div class="btn-group">
-			<a href="" class="btn btn-default">Izq</a>
-			<a href="" class="btn btn-default">Centro</a>
-			<a href="" class="btn btn-default">Der</a>
-		</div>
-		<div class="btn-group">
-			<a href="" class="btn btn-default">1</a>
-			<a href="" class="btn btn-default">2</a>
-			<a href="" class="btn btn-default">3</a>
-		</div>
-	</div>
-
-	<br>
-
-	<div class="btn-group">
-		<a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Desplegable
-		<span class="caret"></span></a>
-		<ul class="dropdown-menu">
-			<li><a href="">This is a test</a></li>
-			<li><a href="">This is a test</a></li>
-			<li><a href="">This is a test</a></li>
-			<li><a href="">This is a test</a></li>
-		</ul>
-		<hr>
 	</div>
 	
-	<hr>
-
-	<div class="btn-group btn-group-vertical">
-		<a href="" class="btn btn-default btn-primary">1</a>
-		<a href="" class="btn btn-default btn-primary">1</a>
-		<a href="" class="btn btn-default btn-primary 	">1</a>
-	</div>
-
-
-
-	<div class="row-fluid">
-		<div class="span12">
-			<div class="page-header">
-				<h1>Iconos</h1>
+	<!-- EJEMPLO GRILLA -->
+	<div class="container">
+		<div class="row">
+			<center><h1>EJEMPLO GRILLA 12 COLUMNAS</h1></center>
+			<div class="col-md-12">
+				<h1>THIS IS TEST</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, veniam modi debitis sed officia beatae iure nam iusto eaque esse voluptatibus, accusamus eos mollitia at omnis asperiores adipisci incidunt autem!</p>
+		
 			</div>
 		</div>
-	</div>
-
-
-
-	<div class="row-fluid">
-		<div class="col-md-4">
-			<i class="glyphicon glyphicon-user"></i> 
-			<i class="glyphicon glyphicon-heart-empty"></i>	
-			<i class="fa fa-bicycle"></i>
+		<div class="row">
+			<div class="col-md-6">
+				<h1>TEST 6-1</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod minus assumenda dolores quos id, nostrum fuga nobis debitis voluptates earum illo enim, et commodi dolore vero fugiat? Nobis corporis, alias.</p>
+			</div>
+			<div class="col-md-6">
+				<h1>TEST 6-2</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quam ex aliquid, voluptate, omnis et expedita similique quibusdam, molestias animi ea. Cum nemo, ad iusto ipsum suscipit laboriosam quis dicta!</p>
+			</div>
 		</div>
-		<div class="col-md-4">
-			<a href="" class="btn"><i class="glyphicon glyphicon-user"></i> Registrer</a>
-		</div>
-
-	</div>
-
-	<div class="row-fluid">
-		<hr>
-		<div class="col-md-4">
-			<a href="" class="btn">Link</a>
-			<input type="submit" value="Submit" class="btn">
-			<input type="button" value="Buton" class="btn">
-			<button class="btn">Tag Button</button>
-
-			<hr>
-			<a href="" class="btn btn-block">Link</a>
-			<input type="submit" value="Submit" class="btn btn-block">
-			<input type="button" value="Buton" class="btn btn-block">
-			<button class="btn btn-block">Tag Button</button>
-
-			<hr>
-
-			<a href="" class="btn btn-link">Link</a>
-			<input type="submit" value="Submit" class="btn btn-link">
-			<input type="button" value="Buton" class="btn btn-link">
-			<button class="btn btn-link">Tag Button</button>
-
-
-		</div>
-
-		<div class="col-md-4">
-			<a href="" class="btn btn-primary">Link</a>
-			<input type="submit" value="Submit" class="btn btn-primary">
-			<input type="button" value="Buton" class="btn btn-primary">
-			<button class="btn btn-primary">Tag Button</button>
-
-			<hr>
-
-			<a href="" class="btn btn-success">Link</a>
-			<input type="submit" value="Submit" class="btn btn-success">
-			<input type="button" value="Buton" class="btn btn-success">
-			<button class="btn btn-success">Tag Button</button>
-
-			<hr>
-
-			<a href="" class="btn btn-warning">Link</a>
-			<input type="submit" value="Submit" class="btn btn-warning">
-			<input type="button" value="Buton" class="btn btn-warning">
-			<button class="btn btn-warning">Tag Button</button>
-
-			<hr>
-
-			<a href="" class="btn btn-info">Link</a>
-			<input type="submit" value="Submit" class="btn btn-info">
-			<input type="button" value="Buton" class="btn btn-info">
-			<button class="btn btn-info">Tag Button</button>
-
-			<hr>
-
-			<a href="" class="btn btn-danger">Link</a>
-			<input type="submit" value="Submit" class="btn btn-danger">
-			<input type="button" value="Buton" class="btn btn-danger">
-			<button class="btn btn-danger">Tag Button</button>
-
-			<hr>
-
-			<a href="" class="btn btn-inverse">Link</a>
-			<input type="submit" value="Submit" class="btn btn-inverse">
-			<input type="button" value="Buton" class="btn btn-inverse">
-			<button class="btn btn-inverse">Tag Button</button>
-
-		</div>
-
-		<div class="col-md-4">
-			<hr>
-
-			<a href="" class="btn btn-ls">Link</a>
-			<input type="submit" value="Submit" class="btn btn-ls">
-			<input type="button" value="Buton" class="btn btn-ls">
-			<button class="btn btn-ls">Tag Button</button>
-
-			<hr>
-
-			<a href="" class="btn">Link</a>
-			<input type="submit" value="Submit" class="btn">
-			<input type="button" value="Buton" class="btn">
-			<button class="btn">Tag Button</button>
-
-			<hr>
-
-			<a href="" class="btn-default btn-xs">Link</a>
-			<input type="submit" value="Submit" class="btn btn-sm">
-			<input type="button" value="Buton" class="btn btn-sm">
-			<button class="btn btn-sm">Tag Button</button>
-
-			<hr>
-
-			<a href="" class="btn btn-xs">Link</a>
-			<input type="submit" value="Submit" class="btn btn-xs">
-			<input type="button" value="Buton" class="btn btn-xs">
-			<button class="btn btn-xs">Tag Button</button>
-
-
-		</div>
-	</div>
-
-	<div class="row-fluid">
-		<div class="col-md-6">
-			<form action="">
-				<legend>Datos Personales</legend>
-				<label for="">Name</label>
-				<input type="text"><br>
-				<label for="">Name</label>
-				<input type="text"><br>
-				<legend>Datos de facturacion</legend>
-				<label for="">Name</label>
-				<input type="text">
-				<br>
-				<input type="submit" class="btn">
-			</form>
-
-		</div>
-		<div class="col-md-6">
-			<form action="">
-				<input type="text" class="query-search">
-			</form>
-			<hr>
-			<form action="" class="form-inline">
-				<input type="text">
-				<input type="submit" class="btn">
-			</form>
-			<hr>
-			<form action="">
-				<div class="input-group">
-					<span class="input-group-addon">:P</span>
-					<input type="text">
-				</div>
-			</form>﻿
-		</div>
-	</div>
-
-
-		<div class="row-fluid">
-			<div class="col-md-12">
-				<table class="table table-bordered table-striped table-hover table-condensed">
-					<tr>
-						<th>Campos</th>
-						<th>Campos</th>
-						<th>Campos</th>
-						<th>Campos</th>
-					</tr>
-					<tr>
-						<td>Campos</td>
-						<td>Campos</td>
-						<td>Campos</td>
-						<td>Campos</td>
-					</tr>
-					<tr>
-						<td>Campos</td>
-						<td>Campos</td>
-						<td>Campos</td>
-						<td>Campos</td>
-					</tr>
-					<tr>
-						<td>Campos</td>
-						<td>Campos</td>
-						<td>Campos</td>
-						<td>Campos</td>
-					</tr>
-				</table>
+		<div class="row">
+			<div class="col-md-3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quidem aliquid fugit dicta modi iste quam, reiciendis neque voluptatibus quis tenetur quod eos tempora pariatur aut sequi porro, culpa dignissimos!</p>
+			</div>
+			<div class="col-md-3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit qui nam omnis ipsum ratione nihil voluptatem pariatur minima maxime mollitia, repellendus deleniti ab, sequi fugiat ullam, asperiores sed. Commodi, harum!</p>
+			</div>
+			<div class="col-md-3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis sit dicta, atque vel reprehenderit laborum ipsum ipsa unde repellendus, labore, quibusdam magni! Architecto iure voluptate pariatur, aperiam, provident tenetur.</p>
+			</div>
+			<div class="col-md-3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, tempora, eos sunt voluptates ipsam debitis omnis facere iure blanditiis laboriosam eveniet alias laudantium temporibus, maxime animi minima. Dolorem, optio harum!</p>
 			</div>
 		</div>
 		<div class="row-fluid">
-			<div class="col-md-12">
-
-				<div class="well visible-lg">
-					<h1 class="text-center">
-						Desktop
+			<div class="col-md-6">
+				<div class="col-md-3">
+					<h1>
+						HOLA
 					</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam doloremque explicabo possimus fuga maxime, laborum culpa velit quod esse eum provident, numquam placeat voluptas vitae ipsam non quos tenetur molestiae.</p>
 				</div>
-
-				<div class="well visible-md">
-					<h1 class="text-center">
-						Tablet
+				<div class="col-md-3">
+					<h1>
+						HOLA
 					</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus pariatur consequuntur quia, quod explicabo nobis ut, molestiae quis ex voluptas libero atque quo sunt voluptatem qui sapiente porro officiis id.</p>
 				</div>
-
-				<div class="well visible-sm">
-					<h1 class="text-center">
-						Tablet y celular horizontal
-					</h1>
-				</div>
-
-				<div class="well visible-xs">
-					<h1 class="text-center">
-						Celular
-					</h1>
-				</div>
-
+			</div>
+			<div class="col-md-6">
 				
 			</div>
 		</div>
-		<div class="row-fluid">
-			<div class="col-md-12">
-				<h1>
-					This is test
-				</h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</div>
-		</div>
-		<div class="row-fluid">
-			<div class="col-md-6">
-				<div class="row-fluid">
-					<div class="col-md-6">
-						<h1>This is test</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur </p>
-					</div>	
-					<div class="col-md-6">
-						<h1>This is test</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<h1>
-					This is test
-				</h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</div>
-		</div>
-		<div class="row-fluid">
-			<div class="col-md-3">
-				<h1>
-					This is a test
-				</h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</div>
-			<div class="col-md-3">
-				<h1>
-					This is a test
-				</h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</div>
-			<div class="col-md-3">
-				<h1>
-					This is a test
-				</h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</div>
-			<div class="col-md-3">
-				<h1>
-					This is a test
-				</h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</div>
-		</div>
 	</div>
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	
+	
 </body>
 </html>
